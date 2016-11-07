@@ -303,8 +303,8 @@ extension ASResizeableInputAccessoryView {
                 self.selectedComponent?.animatedLayout(nextBarHeight)
             },
             completion: { (finished) in
-                heightConstraint.constant = nextBarHeight
-                self.layoutIfNeeded()
+//                heightConstraint.constant = nextBarHeight
+//                self.layoutIfNeeded()
                 self.delegate?.inputAccessoryViewDidAnimateToHeight(self, height: nextBarHeight, keyboardHeight: keyboardHeight)
                 self.selectedComponent?.postAnimationLayout(nextBarHeight)
             }
